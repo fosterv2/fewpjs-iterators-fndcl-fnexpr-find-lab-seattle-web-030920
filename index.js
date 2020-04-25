@@ -5,7 +5,6 @@ function testFunc() {
 }
 
 function superbowlWin(records) {
-  debugger
-  let record = records.find(record => return record[:result] === "W")
-  if !!record ? (return record[:year]) : (return false)
+  let record = records.find(record => record.result === "W")
+  if !!record ? (return record.year) : (return false)
 }
